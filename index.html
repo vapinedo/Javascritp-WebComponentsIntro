@@ -9,8 +9,21 @@
 </head>
 <body>
     <main class="wrapper">
-        <div>a</div>
-        <div>b</div>
+        <div>
+            <app-list 
+                data-url="https://jsonplaceholder.typicode.com/users"
+                data-title="Nombres"
+                data-field="name"
+                ></app-list>
+            </div>
+            <div>
+                <app-list 
+                data-url="https://jsonplaceholder.typicode.com/albums/1/photos"
+                data-title="Usernames"
+                data-field="thumbnailUrl"
+                showImage="true"
+            ></app-list>
+        </div>
     </main>
 
     <script src="./main.js"></script>
